@@ -130,8 +130,7 @@ section {
 
 /* Projects style */
 
- .projects {
-     background-color:  $light-color;
+ .projects {   
      padding-top: 3em;
      .title {
         text-align: center;
@@ -204,6 +203,30 @@ section {
         }
     }
     
+/* Contact style */
+
+    .contact {
+            padding-top: 3em;
+        .title {
+            text-align: center;
+            font-size: 36px; 
+            font-weight: 700;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+        }
+        .contact-content {
+            text-align: center;
+            p {
+            display: inline-block;
+            color: $dark-color;
+            font-weight: 300;
+            font-size: 1.0em;
+            text-align: justify;
+            padding: 0 1em;
+            margin: 0 auto 60px auto;
+            }
+        }
+    }
 
 
 
