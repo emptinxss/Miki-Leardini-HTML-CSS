@@ -209,7 +209,7 @@ section {
 }
 
 .about .about-content .left {
-  width: 40%;
+  width: 45%;
 }
 
 .about .about-content .left img {
@@ -220,7 +220,7 @@ section {
 }
 
 .about .about-content .right {
-  width: 60%;
+  width: 55%;
 }
 
 .about .about-content .right p {
@@ -231,6 +231,48 @@ section {
   padding: 0 1em;
   margin: 0 auto;
   max-width: 540px;
+}
+
+.about .skill-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+}
+
+.about .skill-content .skill {
+  width: 50%;
+}
+
+.about .skill-content .skill h3 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+.about .skill-content .skill i {
+  font-size: 30px;
+  padding: 20px;
+}
+
+.about .skill-content .toolbox {
+  width: 50%;
+}
+
+.about .skill-content .toolbox h3 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-top: 60px;
+  margin-bottom: 40px;
 }
 
 /* Contact style */
@@ -258,4 +300,32 @@ section {
   text-align: justify;
   padding: 0 1em;
   margin: 0 auto 60px auto;
+}
+
+.contact .contact-content a {
+  color: #263238;
+}
+
+/* Footer style*/
+.footer {
+  background-color: #263238;
+  padding: 5px;
+}
+
+.footer .footer-container {
+  text-align: center;
+  font-size: 25px;
+  padding-bottom: 10px;
+}
+
+.footer .footer-container a {
+  color: #ECEFF1;
+  padding: 8px;
+}
+
+.footer .copyright {
+  text-align: center;
+  color: #ECEFF1;
+  font-weight: 200;
+  font-size: 1.0em;
 }

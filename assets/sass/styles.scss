@@ -140,7 +140,6 @@ section {
         padding-bottom: 20px;
      }
      .projects-content {
-    
         text-align: center;
 
         h3 {
@@ -179,7 +178,7 @@ section {
             align-items: center;
             justify-content: space-between;
             .left {
-                width: 40%;
+                width: 45%;
                 
                 img {
                     width: 400px;
@@ -188,7 +187,7 @@ section {
                 }
             }
             .right {
-                width: 60%;
+                width: 55%;
                 p {
                     display: inline-block;
                     font-weight: 300;
@@ -198,6 +197,36 @@ section {
                     margin: 0 auto;
                     max-width: 540px;
                     
+                }
+            }
+        }
+
+        .skill-content {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            text-align: center;
+            .skill {
+                 width: 50%;
+                h3 {
+                    font-size: 30px; 
+                    font-weight: 700;
+                    margin-top: 60px;
+                    margin-bottom: 20px;
+                }
+                i {
+                    font-size: 30px;
+                    padding: 20px;
+                }
+            }
+            .toolbox {
+                width: 50%;
+                h3 {
+                    font-size: 30px; 
+                    font-weight: 700;
+                    margin-top: 60px;
+                    margin-bottom: 40px;
                 }
             }
         }
@@ -215,6 +244,7 @@ section {
             padding-bottom: 20px;
         }
         .contact-content {
+            
             text-align: center;
             p {
             display: inline-block;
@@ -225,16 +255,36 @@ section {
             padding: 0 1em;
             margin: 0 auto 60px auto;
             }
+            a {
+                color: $dark-color;
+            }
+        }
+    }
+
+/* Footer style*/
+
+.footer {
+    background-color: $dark-color;
+    padding: 5px;
+    .footer-container {
+        text-align: center;
+        font-size: 25px;
+        padding-bottom: 10px;
+        a {
+            color: $light-color;
+            padding: 8px;
         }
     }
 
 
+    .copyright {
+        text-align: center;
+        color: $light-color;
+        font-weight: 200;
+        font-size: 1.0em;
+        
+    }
 
-
-
-
-
-
-
+}
 
 @import "mobile";
