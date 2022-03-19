@@ -14,9 +14,12 @@ function update_carousel_words(){
 
 // menu navbar
 $(document).ready(function(){
+
     $(".menu-mobile").click(function(){
-        $(".navbar .menu").toggleClass("active");
-        $('.menu-mobile i').toggleClass("active");
+        $(".navbar .max-width .menu").toggleClass("active");
+        $(".menu-mobile i").toggleClass("active");
+        
+        
     });
     
 });

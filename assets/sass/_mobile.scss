@@ -84,8 +84,62 @@
     }
 
     .max-width {
-        width: 560px;
+        width: 580px;
+        padding: 0 20px;
     }
+    .navbar {
+        .max-width {
+            justify-content: space-between;
+            margin: auto;
+            
+            
+            .menu-mobile {
+                display: block;
+                z-index: 999;
+                color: $light-color;
+            }
+
+            .menu-mobile i.active:before {
+                content: "\f00d";
+            }
+            .menu {
+               position: fixed;
+               z-index: 999;
+               height: 45vh;
+               width: 100%;
+               left: -100%;
+               top: 0;
+               background: $dark-color; opacity: 0.9;
+               text-align: center;
+               padding-top: 80px;
+               transition: all 0.3s ease;
+                
+                &.active{
+                    left: 0;
+                }
+
+               li  {
+                   display: block;
+               a {
+                   display: inline-block;
+                   color: $light-color;
+                   margin: 20px 0;
+                   font-size: 2.5rem;
+               }
+            }
+            li:first-of-type {
+                margin-left: auto;
+            }
+            li:last-of-type {
+                margin-right: auto;
+            }
+        }
+        
+        }
+
+    }
+
+    
     .home {
         min-height: 300px;
 
@@ -181,7 +235,7 @@
                 margin: 3px 1px;
             }
             a {
-                font-size: 1.5rem;
+                font-size: 1.5  rem;
                 padding: 4px 10px;
                 margin-top: 5px;
             }
