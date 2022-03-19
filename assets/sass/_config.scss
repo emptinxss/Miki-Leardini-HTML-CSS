@@ -1,7 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,300;1,400&display=swap');
-
+/*
 $dark-color: #263238;
 $light-color: #ECEFF1;
-$ext-color: #FFEF01;
+*/
+$dark-color: #ECEFF1;
+$light-color: #263238;
+$ext-color: #B71C1C;
 $font-stack: Poppins, sans-serif;
  
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+/* Scrollbar*/
+::-webkit-scrollbar {
+    width: 5px;
+    border-radius: .30em;
+  }
+  
+  
+  ::-webkit-scrollbar-track {
+    background: $light-color;
+    border-radius: 10px;
+  }
+  
+ 
+  ::-webkit-scrollbar-thumb {
+    background: darken($color: $dark-color, $amount: 40);
+    border-radius: 10px;
+  }
+  
+ 
+  ::-webkit-scrollbar-thumb:hover {
+    background: lighten($color: $dark-color, $amount: 10);
+  }

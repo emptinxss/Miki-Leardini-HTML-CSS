@@ -1,4 +1,33 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,300;1,400&display=swap");
+/*
+$dark-color: #263238;
+$light-color: #ECEFF1;
+*/
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+/* Scrollbar*/
+::-webkit-scrollbar {
+  width: 5px;
+  border-radius: .30em;
+}
+
+::-webkit-scrollbar-track {
+  background: #263238;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #778c9a;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: white;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -8,16 +37,17 @@
 }
 
 body {
-  background-color: #ECEFF1;
+  background-color: #263238;
+  color: #ECEFF1;
   font-family: Poppins, sans-serif;
-  font-size: 17px;
-  line-height: 1.8em;
+  font-size: 1.7rem;
+  line-height: 3.2rem;
 }
 
 .max-width {
   width: 1300px;
   padding: 10px 80px 0 80px;
-  margin: auto;
+  margin: 0 auto;
 }
 
 section {
@@ -28,29 +58,6 @@ section {
 .navbar {
   background-color: #ECEFF1;
   width: 100%;
-  padding-bottom: 10px;
-}
-
-.navbar .menu li a {
-  color: #000;
-  font-weight: 500;
-  margin: 0 40px;
-  -webkit-transition: color 0.3 ease;
-  transition: color 0.3 ease;
-}
-
-.navbar .menu li a:hover {
-  color: #455b66;
-}
-
-.navbar .menu li {
-  list-style: none;
-  display: inline-block;
-  border-style: solid;
-  border-width: 1px;
-  border-left: none;
-  border-top: none;
-  border-bottom: none;
 }
 
 .navbar .max-width {
@@ -64,7 +71,29 @@ section {
       -ms-flex-pack: center;
           justify-content: center;
   margin-right: 200px;
+  /* non centro con margin: 0 auto; perche volevo che si centrasse il testo con l immagine*/
   margin-left: 355px;
+}
+
+.navbar .menu li a {
+  color: #263238;
+  font-weight: 500;
+  margin: 0 40px;
+  -webkit-transition: color 0.3 ease;
+  transition: color 0.3 ease;
+}
+
+.navbar .menu li a:hover {
+  color: #8b1515;
+}
+
+.navbar .menu li {
+  list-style: none;
+  display: inline-block;
+  border: 1px solid #263238;
+  border-left: none;
+  border-top: none;
+  border-bottom: none;
 }
 
 .navbar .menu li:first-of-type {
@@ -76,18 +105,11 @@ section {
   border-right: none;
 }
 
-.menu-mobile {
-  color: black;
-  font-size: 24px;
-  cursor: pointer;
-  display: none;
-}
-
 /* home style */
 .home {
-  background-color: #263238;
+  background-color: #ECEFF1;
   height: 100%;
-  color: #ECEFF1;
+  color: #263238;
   min-height: 500px;
 }
 
@@ -105,46 +127,49 @@ section {
 }
 
 .home .max-width img {
-  width: 50%;
+  width: 55%;
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
 }
 
 .home .home-content .text-1 {
-  line-height: 1.2;
-  font-size: 50px;
+  line-height: 5rem;
+  font-size: 5rem;
   font-weight: 200;
 }
 
 .home .home-content .text-2 {
-  font-size: 20px;
-  font-weight: 200;
+  font-size: 2rem;
+  font-weight: 300;
 }
 
 .home .home-content .text-3 {
   font-weight: 300;
-  font-size: 20px;
+  font-size: 2rem;
   margin: 5px 0;
-  color: #FFEF01;
+  color: #B71C1C;
   font-weight: 500;
 }
 
 .home .home-content a {
   display: inline-block;
-  background: #ECEFF1;
-  color: black;
-  font-size: 15px;
+  background: #B71C1C;
+  color: #ECEFF1;
+  font-size: 1.5rem;
   padding: 10px 20px;
   margin-top: 10px;
-  border: 2px solid black;
+  border: 2px solid #263238;
   border-radius: 6px;
   -webkit-transition: all 0.3 ease;
   transition: all 0.3 ease;
 }
 
 .home .home-content a:hover {
-  color: black;
-  background: #FFEF01;
-  -webkit-transform: scale(0.98);
-          transform: scale(0.98);
+  color: #263238;
+  background: #ECEFF1;
+  border-color: #263238;
+  -webkit-transform: scale(0.96);
+          transform: scale(0.96);
 }
 
 /* Projects style */
@@ -154,7 +179,7 @@ section {
 
 .projects .title {
   text-align: center;
-  font-size: 36px;
+  font-size: 3.6rem;
   font-weight: 700;
   margin-bottom: 60px;
   padding-bottom: 20px;
@@ -165,15 +190,15 @@ section {
 }
 
 .projects .projects-content h3 {
-  font-size: 28px;
+  font-size: 2.8rem;
   font-weight: 700;
 }
 
 .projects .projects-content p {
   display: inline-block;
-  color: #263238;
+  color: #ECEFF1;
   font-weight: 300;
-  font-size: 1.0em;
+  font-size: 1.8rem;
   text-align: justify;
   padding: 0 1em;
   margin: 10px auto 60px auto;
@@ -181,14 +206,14 @@ section {
 
 /* About style */
 .about {
-  color: #ECEFF1;
-  background-color: #263238;
+  color: #263238;
+  background-color: #ECEFF1;
   padding-top: 3em;
 }
 
 .about .title {
   text-align: center;
-  font-size: 36px;
+  font-size: 3.6rem;
   font-weight: 700;
   margin-bottom: 60px;
   padding-bottom: 20px;
@@ -209,28 +234,35 @@ section {
 }
 
 .about .about-content .left {
-  width: 45%;
+  width: 50%;
+  margin-bottom: -10px;
 }
 
 .about .about-content .left img {
   width: 400px;
   height: 540px;
+  margin-left: 75px;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
 .about .about-content .right {
-  width: 55%;
+  width: 50%;
+  margin-bottom: -10px;
 }
 
 .about .about-content .right p {
   display: inline-block;
   font-weight: 300;
-  font-size: 1.4em;
+  font-size: 2.2rem;
   text-align: justify;
-  padding: 0 1em;
+  padding: 0 1.5em;
   margin: 0 auto;
   max-width: 540px;
+}
+
+.about .about-content .right a {
+  color: #B71C1C;
 }
 
 .about .skill-content {
@@ -250,29 +282,62 @@ section {
 
 .about .skill-content .skill {
   width: 50%;
+  height: 350px;
 }
 
 .about .skill-content .skill h3 {
-  font-size: 30px;
+  font-size: 3rem;
   font-weight: 700;
-  margin-top: 60px;
+  margin-top: 50px;
   margin-bottom: 20px;
 }
 
 .about .skill-content .skill i {
-  font-size: 30px;
-  padding: 20px;
+  font-size: 3rem;
+  padding: 30px 20px;
+}
+
+.about .skill-content .skill .tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.about .skill-content .skill .tooltip .tooltiptext {
+  visibility: hidden;
+  width: 100px;
+  background-color: white;
+  color: #263238;
+  text-align: center;
+  font-size: 1.6rem;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 75%;
+  left: 50%;
+  margin-left: -50px;
+}
+
+.about .skill-content .skill .tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.about .skill-content .skill p {
+  padding-bottom: 10px;
 }
 
 .about .skill-content .toolbox {
   width: 50%;
+  height: 350px;
 }
 
 .about .skill-content .toolbox h3 {
-  font-size: 30px;
+  font-size: 3rem;
   font-weight: 700;
-  margin-top: 60px;
-  margin-bottom: 40px;
+  margin-top: 50px;
+  padding-bottom: 40px;
+}
+
+.about .skill-content .toolbox p {
+  padding-bottom: 5px;
 }
 
 /* Contact style */
@@ -282,7 +347,7 @@ section {
 
 .contact .title {
   text-align: center;
-  font-size: 36px;
+  font-size: 3.6rem;
   font-weight: 700;
   margin-bottom: 40px;
   padding-bottom: 20px;
@@ -294,7 +359,7 @@ section {
 
 .contact .contact-content p {
   display: inline-block;
-  color: #263238;
+  color: #ECEFF1;
   font-weight: 300;
   font-size: 1.0em;
   text-align: justify;
@@ -303,29 +368,185 @@ section {
 }
 
 .contact .contact-content a {
-  color: #263238;
+  color: #ECEFF1;
 }
 
 /* Footer style*/
 .footer {
-  background-color: #263238;
+  background-color: #ECEFF1;
   padding: 5px;
 }
 
 .footer .footer-container {
   text-align: center;
-  font-size: 25px;
+  font-size: 2.5rem;
   padding-bottom: 10px;
 }
 
 .footer .footer-container a {
-  color: #ECEFF1;
+  color: #263238;
   padding: 8px;
 }
 
 .footer .copyright {
   text-align: center;
-  color: #ECEFF1;
-  font-weight: 200;
-  font-size: 1.0em;
+  color: #263238;
+  font-weight: 300;
+  font-size: 1.6rem;
+}
+
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 60%;
+  }
+  .max-width {
+    width: 970px;
+    padding: 10px 0 0 0;
+  }
+  .navbar .max-width {
+    margin: 0 100px 0 80px;
+  }
+  .about .about-content .left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 55%;
+  }
+  .max-width {
+    width: 740px;
+  }
+  .navbar .max-width {
+    margin: 0 80px 0 60px;
+  }
+  .home {
+    min-height: 300px;
+  }
+  .home .home-content a {
+    padding: 7px 15px;
+  }
+  .about .about-content .column {
+    width: 100%;
+    padding-bottom: 30px;
+    text-align: center;
+  }
+  .about .about-content .left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 auto;
+  }
+  .about .about-content .left img {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 50%;
+  }
+  .max-width {
+    width: 560px;
+  }
+  .home {
+    min-height: 300px;
+  }
+  .home .home-content .text-1 {
+    line-height: 3rem;
+    font-size: 3rem;
+  }
+  .home .home-content .text-2 {
+    font-size: 1.5rem;
+  }
+  .home .home-content .text-3 {
+    font-size: 1.5rem;
+    margin: 3px 1px;
+  }
+  .home .home-content a {
+    font-size: 1.3rem;
+    padding: 4px 10px;
+    margin-top: 5px;
+  }
+  .about .about-content .left img {
+    margin: 0 auto;
+  }
+  .about .skill-content .skill i {
+    font-size: 2.5rem;
+    padding: 25px 15px;
+  }
+  .contact .contact-content p {
+    margin: 0 auto  30px auto;
+  }
+  .footer .footer-container {
+    font-size: 2rem;
+  }
+  .footer .copyrigth {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 50%;
+  }
+  .max-width {
+    width: 350px;
+  }
+  .home .max-width img {
+    width: 0%;
+  }
+  .home .max-width .home-content {
+    padding-top: 70px;
+  }
+  .home .max-width .home-content .text-1 {
+    line-height: 4rem;
+    font-size: 4rem;
+  }
+  .home .max-width .home-content .text-2 {
+    font-size: 2rem;
+  }
+  .home .max-width .home-content .text-3 {
+    font-size: 2rem;
+    margin: 3px 1px;
+  }
+  .home .max-width .home-content a {
+    font-size: 1.5rem;
+    padding: 4px 10px;
+    margin-top: 5px;
+  }
+  .about .about-content .left img {
+    width: 400px;
+    height: 500px;
+  }
+  .about .skill-content .skill {
+    width: 100%;
+    height: 270px;
+  }
+  .about .skill-content .skill i {
+    padding: 25px 20px;
+  }
+  .about .skill-content .toolbox {
+    width: 100%;
+    height: 300px;
+  }
+  .contact .contact-content p:first-of-type {
+    margin-bottom: 40px;
+  }
+  .contact .contact-content p {
+    margin-bottom: 0;
+  }
+  .contact .contact-content p:last-of-type {
+    margin-bottom: 40px;
+  }
 }
