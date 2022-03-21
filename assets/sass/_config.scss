@@ -1,18 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,300;1,400&display=swap');
-/*
-$dark-color: #263238;
+
 $light-color: #ECEFF1;
-*/
-$dark-color: #ECEFF1;
-$light-color: #263238;
+$dark-color: #263238;
 $ext-color: #B71C1C;
 $font-stack: Poppins, sans-serif;
- 
-html {
-  scroll-behavior: smooth;
-  font-size: 62.5%;
-  overflow-x: hidden;
-}
 
 
 * {
@@ -22,25 +13,12 @@ html {
   text-decoration: none;
 }
 
-body {
-  background-color: $light-color;
-  color: $dark-color;
-  font-family: $font-stack;
-  font-size: 1.7rem;
-  line-height: 3.2rem;
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
   overflow-x: hidden;
 }
 
-.max-width {
-  width: 1300px;
-  padding: 10px 80px 0 80px;
-  margin: 0 auto;
-  
-}
-
-section {
-  padding-top: 1em;
-}
 
 /* Scrollbar*/
 ::-webkit-scrollbar {
@@ -50,17 +28,17 @@ section {
   
   
   ::-webkit-scrollbar-track {
-    background: $light-color;
+    background: $dark-color;
     border-radius: 10px;
   }
   
  
   ::-webkit-scrollbar-thumb {
-    background: darken($color: $dark-color, $amount: 40);
+    background: darken($color: $light-color, $amount: 40);
     border-radius: 10px;
   }
   
  
   ::-webkit-scrollbar-thumb:hover {
-    background: lighten($color: $dark-color, $amount: 10);
+    background: lighten($color: $light-color, $amount: 10);
   }

@@ -1,39 +1,91 @@
 @import "config";
 
+
+body {
+    background-color: $light-color;
+    color: $light-color;
+    font-family: $font-stack;
+    font-size: 1.7rem;
+    line-height: 3.2rem;
+    overflow-x: hidden;
+    
+    
+  }
+  
+  .max-width {
+    width: 1300px;
+    padding: 10px 80px 0 80px;
+    margin: 0 auto;
+    
+  }
+  
+  section {
+    padding-top: 1em;
+  }
+  
+/* Scroll up button style*/
+
+.scroll-up-btn {
+    position: fixed;
+    height: 40px;
+    width: 40px;
+    background: $dark-color;
+    right: 30px;
+    bottom: 10px;
+    text-align: center;
+    line-height: 3.8rem;
+    color: $light-color;
+    z-index: 999;
+    font-size: 2rem;
+    border: 2px solid $light-color;
+    border-radius: 10px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.scroll-up-btn.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
 /* navbar style*/
 .navbar {
-    background-color: $dark-color;
+  
+    background-color: $light-color;
     width: 100%;
 
     .max-width {
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-right: 200px;   /* non centro con margin: 0 auto; perche volevo che si centrasse il testo con l immagine*/
-        margin-left: 355px;
+        margin: 0 auto;
        
         .menu-mobile {
-            color: $light-color;
+            color: $dark-color;
             font-size: 2.5rem;
             cursor: pointer;
-            margin-right: 20px;
             display: none;
           }
     
     .menu li a {
-        color: $light-color;
+        display: block;
+        color: $dark-color;
+        font-size: 2rem;
         font-weight: 500;
         margin: 0 40px;
+        transition: color 0.3 ease;
         &:hover {
-            color: darken($color: $ext-color, $amount: 10);
-            transition: color 0.3 ease;
+            color: $ext-color;
+           
             
         }
     }
     .menu li  {
         list-style: none;
         display: inline-block;
-        border: 1px solid $light-color;
+        border: 1px solid $dark-color;
         border-left: none;
         border-top: none;
         border-bottom: none;
@@ -43,9 +95,9 @@
         margin-left: 60px;
     }
     .menu li:last-of-type {
-        margin-right: 100px;
+        
         border-right: none;
-    }
+        }
     }
 }
 
@@ -53,9 +105,9 @@
 /* home style */
 
 .home {
-    background-color: $dark-color;
+    background-color: $light-color;
     height: 100%;
-    color: $light-color;
+    color: $dark-color;
     min-height: 500px;
     
 
@@ -84,27 +136,28 @@
             font-weight: 300;
         }
         .text-3 {
-            font-weight: 300;
             font-size: 2rem;
             margin: 5px 0;
             color: $ext-color;
-            font-weight: 500;
+            font-weight: 600;
         }
         a {
+            
             display: inline-block;
             background: $ext-color;
-            color: $dark-color;
+            color: $light-color;
             font-size: 1.5rem;
             padding: 10px 20px;
             margin-top: 10px;
-            border: 2px solid $light-color;
+            border: 2px solid $dark-color;
             border-radius: 6px;
             transition: all 0.3 ease;
             &:hover {
-                color: $light-color;
-                background: $dark-color;
-                border-color: $light-color;
+                color: $dark-color;
+                background: $light-color;
+                border-color: $dark-color;
                 transform: scale(0.96);
+                
             }
         }
     }
@@ -114,7 +167,8 @@
 /* Projects style */
 
  .projects {   
-     padding-top: 3em;
+     background-color: $dark-color;
+    
      .title {
         text-align: center;
         font-size: 3.6rem; 
@@ -131,7 +185,7 @@
         }
         p {
             display: inline-block;
-            color: $dark-color;
+            color: $light-color;
             font-weight: 300;
             font-size: 1.8rem;
             text-align: justify;
@@ -144,9 +198,9 @@
 /* About style */
 
     .about {
-        color: $light-color;
-        background-color: $dark-color;
-        padding-top: 3em;
+        color: $dark-color;
+        background-color: $light-color;
+        
         .title {
             text-align: center;
             font-size: 3.6rem; 
@@ -177,7 +231,7 @@
                 margin-bottom: -10px;
                 p {
                     display: inline-block;
-                    font-weight: 300;
+                    font-weight: 400;
                     font-size: 2.2rem;
                     text-align: justify;
                     padding: 0 1.5em;
@@ -217,8 +271,8 @@
                         visibility: hidden;
                         width: 100px;
                         
-                        background-color: lighten($color: $dark-color, $amount: 30);
-                        color: $light-color;
+                        background-color: lighten($color: $light-color, $amount: 30);
+                        color: $dark-color;
                         text-align: center;  
                         font-size: 1.6rem;                     
                         border-radius: 10px;
@@ -259,6 +313,7 @@
 /* Contact style */
 
     .contact {
+            background-color: $dark-color;
             padding-top: 3em;
         .title {
             text-align: center;
@@ -272,7 +327,7 @@
             text-align: center;
             p {
             display: inline-block;
-            color: $dark-color;
+            color: $light-color;
             font-weight: 300;
             font-size: 1.0em;
             text-align: justify;
@@ -280,7 +335,7 @@
             margin: 0 auto 60px auto;
             }
             a {
-                color: $dark-color;
+                color: $light-color;
             }
         }
     }
@@ -288,14 +343,14 @@
 /* Footer style*/
 
 .footer {
-    background-color: $dark-color;
+    background-color: $light-color;
     padding: 5px;
     .footer-container {
         text-align: center;
         font-size: 2.5rem;
         padding-bottom: 10px;
         a {
-            color: $light-color;
+            color: $dark-color;
             padding: 8px;
         }
     }
@@ -303,7 +358,7 @@
 
     .copyright {
         text-align: center;
-        color: $light-color;
+        color: $dark-color;
         font-weight: 300;
         font-size: 1.6rem;
         
