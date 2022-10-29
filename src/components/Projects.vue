@@ -12,7 +12,7 @@
         <SingleProject
           header="Personal website portfolio"
           description="That's my first project i ever made, updated with Vue js."
-          image="../public/assets/img/website.png"
+          image="/assets/img/website.png"
           adressGit="https://github.com/emptinxss/emptinxss.github.io"
           adressSite="https://emptinxss.github.io/"
           displaySite="none"
