@@ -3,7 +3,7 @@
     <div class="flex items-center justify-between md:justify-center">
       <div class="logo">
         <a href="/"
-          ><img src="../assets/img/logo-dark.png" class="w-10 h-12"
+          ><img src="/assets/img/logo-dark.png" class="w-10 h-12"
         /></a>
       </div>
       <ul class="hidden md:block">

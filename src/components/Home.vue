@@ -17,7 +17,7 @@
       </div>
       <img
         class="w-0 md:w-4/6 lg:w-5/6 grayscale"
-        src="../assets/img/banner.png"
+        src="/assets/img/banner.png"
         alt="banner"
       />
     </div>

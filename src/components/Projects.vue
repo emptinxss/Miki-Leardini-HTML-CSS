@@ -12,7 +12,7 @@
         <SingleProject
           header="Personal website portfolio"
           description="That's my first project i ever made, updated with Vue js."
-          image="src/assets/img/website.png"
+          image="../public/assets/img/website.png"
           adressGit="https://github.com/emptinxss/emptinxss.github.io"
           adressSite="https://emptinxss.github.io/"
           displaySite="none"
@@ -20,7 +20,7 @@
         <SingleProject
           header="Books finder"
           description="Made with javascript, my first approach of API, json response and data."
-          image="src/assets/img/books.png"
+          image="/assets/img/books.png"
           adressGit="https://github.com/emptinxss/Books-finder"
           adressSite="https://mlbooksfinder.netlify.app/"
           v-motion-slide-visible-once-bottom
@@ -28,7 +28,7 @@
         <SingleProject
           header="Tic tac toe "
           description="My first ever Vue js project. A simple tic tac toe game with names and history."
-          image="src/assets/img/tris.png"
+          image="/assets/img/tris.png"
           adressGit="https://github.com/emptinxss/tic-tac-toe"
           adressSite="https://mltictactoe.netlify.app/"
           v-motion-slide-visible-once-bottom
@@ -36,7 +36,7 @@
         <SingleProject
           header="Mobile e-commerce"
           description="An e-commerce mobile app for a vegan meat company. Made with Vue js."
-          image="src/assets/img/kreas.png"
+          image="/assets/img/kreas.png"
           adressGit="https://github.com/emptinxss/kreas"
           adressSite="https://kreas.netlify.app/"
           v-motion-slide-visible-once-bottom
@@ -44,7 +44,7 @@
         <SingleProject
           header="Social media REST API"
           description="REST API with PHP & MySQL Database. I also created a front-end for this project."
-          image="src/assets/img/voci.png"
+          image="/assets/img/voci.png"
           adressGit="https://github.com/emptinxss/Voci"
           adressSite="http://voci-media.herokuapp.com/posts"
           v-motion-slide-visible-once-bottom
