@@ -31,7 +31,7 @@
           image="src/assets/img/tris.png"
           adressGit="https://github.com/emptinxss/tic-tac-toe"
           adressSite="https://mltictactoe.netlify.app/"
-          v-motion-slide-visible-once-left
+          v-motion-slide-visible-once-bottom
         ></SingleProject>
         <SingleProject
           header="Mobile e-commerce"
@@ -39,7 +39,7 @@
           image="src/assets/img/kreas.png"
           adressGit="https://github.com/emptinxss/kreas"
           adressSite="https://kreas.netlify.app/"
-          v-motion-slide-visible-once-top
+          v-motion-slide-visible-once-bottom
         ></SingleProject>
         <SingleProject
           header="Social media REST API"
@@ -47,7 +47,7 @@
           image="src/assets/img/voci.png"
           adressGit="https://github.com/emptinxss/Voci"
           adressSite="http://voci-media.herokuapp.com/posts"
-          v-motion-slide-visible-once-left
+          v-motion-slide-visible-once-bottom
         ></SingleProject>
       </div>
     </div>
