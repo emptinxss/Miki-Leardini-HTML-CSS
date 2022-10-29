@@ -1,9 +1,6 @@
 <template>
   <div class="max-w-xs m-4 bg-white rounded-lg shadow-md">
-    <img
-      class="rounded-t-lg object-cover h-48 border-b border-gray-500"
-      :src="image"
-    />
+    <img class="rounded-t-lg object-cover h-48" :src="image" />
     <div class="px-5 py-3">
       <h5 class="mb-2 md:text-2xl text-xl font-bold tracking-tight text-scuro">
         {{ header }}

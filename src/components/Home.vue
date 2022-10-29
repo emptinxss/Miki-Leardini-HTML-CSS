@@ -1,5 +1,8 @@
 <template>
-  <section class="bg-burro md:h-full text-scuro min-h-400 flex" id="home">
+  <section
+    class="bg-burro md:h-full text-scuro min-h-400 flex md:pt-10"
+    id="home"
+  >
     <div class="mx-auto flex justify-center items-center">
       <div class="md:w-2/4">
         <h1 class="font-extralight text-3xl">Hi, I'm Miki.</h1>
