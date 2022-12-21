@@ -43,11 +43,20 @@
         ></SingleProject>
         <SingleProject
           header="Social media REST API"
-          description="REST API with PHP & MySQL Database. I also created a front-end for this project."
+          description="I created a REST API for a social media application. Made with Laravel."
           image="/assets/img/voci.png"
           adressGit="https://github.com/emptinxss/Voci"
           adressSite="http://voci-media.herokuapp.com/posts"
-          v-motion-slide-visible-once-bottom
+          displaySite="none"
+          v-motion-slide-visible-once-left
+        ></SingleProject>
+        <SingleProject
+          header="Full stack project"
+          description="App that manage calls to a REST API developed by me and which implements a login/logout and user registration system. "
+          image="/assets/img/freetree.png"
+          adressGit="https://github.com/emptinxss/FreeTree"
+          adressSite="https://freetree.up.railway.app"
+          v-motion-slide-visible-once-left
         ></SingleProject>
       </div>
     </div>
